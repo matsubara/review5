@@ -15,8 +15,32 @@
 
 #include <iostream>
 
+int plusInt (int a, int b) {
+    return a + b;
+}
+
+float plusFloat (float d, float e){
+    return d + e ;
+}
+
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+   
+    int a;
+    int b;
+    int c;
+    a = 12;
+    b= 24;
+    c = plusInt(a, b);
+    
+    std::cout<< c << "\n";
+    
+    float d;
+    float e;
+    float f;
+    d = 10.5;
+    e = 12.75;
+    f = plusFloat(d,e);
+    
+    std::cout<< f << "\n";
     return 0;
 }
